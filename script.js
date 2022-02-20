@@ -233,6 +233,7 @@ $(document).ready(() => {
     // if no data, choose Indonesia
     if (country == null) {
         setCountry("Indonesia", close=false);
+        country = { name: "Indonesia" }
     } else {
         setCountry(country.name, close=false);
     }
@@ -250,9 +251,6 @@ $(document).ready(() => {
     console.log(country)
 
     createVisualization(country.name);
-
-    
-
 }); 
 
 
